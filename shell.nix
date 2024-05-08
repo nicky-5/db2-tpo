@@ -6,4 +6,8 @@ pkgs.mkShell {
      mongodb-tools
      redli
   ];
+
+  shellHook = ''
+    alias redis-cli='redli'
+  '';
 }
