@@ -10,7 +10,8 @@
                 "cweijan.vscode-redis-client",
                 "mechatroner.rainbow-csv",
                 "mhutchie.git-graph",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "bbenoist.Nix"
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "nix-shell",
