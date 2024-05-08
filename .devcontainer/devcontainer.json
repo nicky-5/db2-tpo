@@ -1,0 +1,18 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "devcontainer",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mongodb.mongodb-vscode",
+                "cweijan.vscode-redis-client",
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {},
+        "ghcr.io/itsmechlark/features/redis-server:1": {}
+    }
+}

@@ -1,0 +1,10 @@
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:debian
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+  mongodb:
+    image: mongo:latest
+    restart: always
+    network_mode: service:devcontainer
