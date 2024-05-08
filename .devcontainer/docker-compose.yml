@@ -1,10 +1,14 @@
 services:
   devcontainer:
-    image: mcr.microsoft.com/devcontainers/base:debian
+    image: ghcr.io/xtruder/nix-devcontainer
     volumes:
       - ../..:/workspaces:cached
     command: sleep infinity
   mongodb:
     image: mongo:latest
+    restart: always
+    network_mode: service:devcontainer
+  redis:
+    image: redis:latest
     restart: always
     network_mode: service:devcontainer
