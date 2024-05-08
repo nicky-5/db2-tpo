@@ -7,7 +7,9 @@
             "extensions": [
                 "mongodb.mongodb-vscode",
                 "cweijan.vscode-redis-client",
-                "mechatroner.rainbow-csv"
+                "mechatroner.rainbow-csv",
+                "mhutchie.git-graph",
+                "eamodio.gitlens"
             ]
         }
     },
