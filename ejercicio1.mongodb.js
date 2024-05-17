@@ -1,4 +1,4 @@
-use('ej1');
+use('tpDb');
 db.getCollection('albumlist').aggregate([
     {
         $group: {
