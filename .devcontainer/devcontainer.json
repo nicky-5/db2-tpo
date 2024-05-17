@@ -13,7 +13,8 @@
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
                 "bbenoist.Nix",
-                "usernamehw.errorlens"
+                "usernamehw.errorlens",
+                "yzhang.markdown-all-in-one"
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "nix-shell",
