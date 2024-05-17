@@ -7,15 +7,21 @@
         "vscode": {
             "extensions": [
                 "mongodb.mongodb-vscode",
+                "neo4j-extensions.neo4j-for-vscode",
                 "cweijan.vscode-redis-client",
                 "mechatroner.rainbow-csv",
                 "mhutchie.git-graph",
                 "eamodio.gitlens",
-                "bbenoist.Nix"
+                "bbenoist.Nix",
+                "usernamehw.errorlens"
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "nix-shell",
-                "terminal.integrated.profiles.linux": { "nix-shell": { "path": "/home/code/.nix-profile/bin/nix-shell" } }
+                "terminal.integrated.profiles.linux": {
+                    "nix-shell": {
+                        "path": "/home/code/.nix-profile/bin/nix-shell"
+                    }
+                }
             }
         }
     }

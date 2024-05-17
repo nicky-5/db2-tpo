@@ -8,6 +8,12 @@ services:
     image: mongo:latest
     restart: always
     network_mode: service:devcontainer
+  neo4j:
+    image: neo4j:latest
+    restart: always
+    network_mode: service:devcontainer
+    environment:
+      - NEO4J_AUTH=none
   redis:
     image: redis:latest
     restart: always
