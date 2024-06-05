@@ -1,14 +1,16 @@
 { pkgs ? import <nixpkgs> { } }:
 
 pkgs.mkShell {
-  nativeBuildInputs = with pkgs; [
+  packages = with pkgs; [
      mongosh
      mongodb-tools
      neo4j
      redli
+     fish
+     jq
   ];
 
   shellHook = ''
-    alias redis-cli='redli'
+    exec ${pkgs.fish}/bin/fish
   '';
 }
