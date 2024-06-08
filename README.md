@@ -1,5 +1,5 @@
 ## Conexión a las bases de datos (mongoDB, Neo4j, Redis)
-No es necesario correr comandos para settear el ambiente. Al cargar el codespace ya se settea el ambiente con las bases de datos en cuestión. Basta con ejecutar los scripts que se encuentran en los directorios ejercicioX.
+No es necesario correr comandos para settear el ambiente. Al cargar el codespace ya se settea el ambiente con las bases de datos en cuestión. Basta con ejecutar los scripts que se encuentran en los directorios ejercicioX. Es necesario utilizar codespace para ejecutar los siguientes scripts.
 
 ## MongoDB
 En la carpeta src/ejercicio1 ejecutar
