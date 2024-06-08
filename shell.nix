@@ -9,8 +9,4 @@ pkgs.mkShell {
      fish
      jq
   ];
-
-  shellHook = ''
-    exec ${pkgs.fish}/bin/fish
-  '';
 }
