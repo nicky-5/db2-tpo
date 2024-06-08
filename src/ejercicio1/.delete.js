@@ -1,0 +1,2 @@
+use('tpDb');
+db.dropDatabase();

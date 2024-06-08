@@ -1,0 +1,1 @@
+mongoimport --headerline --db tpDb --collection albumlist --type csv < ../../data/albumlist.csv
