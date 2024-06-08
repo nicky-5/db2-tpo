@@ -3,4 +3,4 @@
 #! nix-shell -p redli
 
 echo "Number of keys"
-echo "KEYS *" | redli
+echo "DBSIZE" | redli
