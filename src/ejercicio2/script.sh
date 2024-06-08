@@ -8,14 +8,14 @@ cypher-shell -f .delete.cypher > /dev/null
 echo -e "Loading data..."
 cypher-shell -f .load.cypher > /dev/null
 
-echo -e "\n\nRunning query A..."
+echo -e "\n\n\nRunning query (item A)..."
 cypher-shell -f a.cypher
 
-echo -e "\n\nRunning query B..."
+echo -e "\n\n\nRunning query (item B)..."
 cypher-shell -f b.cypher
 
-echo -e "\n\nRunning query C..."
+echo -e "\n\n\nRunning query (item C)..."
 cypher-shell -f c.cypher
 
-echo -e "\n\nRunning query D..."
+echo -e "\n\n\nRunning query (item D)..."
 cypher-shell -f d.cypher
