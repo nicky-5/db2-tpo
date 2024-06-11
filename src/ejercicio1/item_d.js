@@ -1,4 +1,5 @@
 use('tpDb');
+config.set("displayBatchSize", 1000);
 db.getCollection('albumlist').find(
     {},
     {
