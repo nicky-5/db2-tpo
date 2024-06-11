@@ -3,22 +3,23 @@
 #! nix-shell -p fish mongosh mongodb-tools
 
 echo -e "Cleaning database..."
-mongosh < .delete.js
+mongosh -f .delete.js
 
-rm out_*.txt 2>/dev/null
+rm out/*.txt 2> /dev/null
+mkdir out 2> /dev/null
 
-echo -e "\n\n\nLoading data (item A)...\n\n"
+echo -e "\n\n\nLoading data (item A)..."
 ./item_a.sh
 echo -e "\n\n"
 
-echo -e "\n\n\nRunning query (item B)...\n\n"
-mongosh < item_b.js | tee out_b.txt
+echo -e "\n\n\nRunning query (item B)..."
+mongosh --eval "$(cat item_b.js)" | tee out/b.txt
 echo -e "\n\n"
 
-echo -e "\n\n\nUpdating docs (item C)...\n\n"
-mongosh < item_c.js | tee out_c.txt
+echo -e "\n\n\nUpdating docs (item C)..."
+mongosh --eval "$(cat item_c.js)" | tee out/c.txt
 echo -e "\n\n"
 
-echo -e "\n\n\nRunning query (item D)...\n\n"
-mongosh < item_d.js | tee out_d.txt
+echo -e "\n\n\nRunning query (item D)..."
+mongosh --eval "$(cat item_d.js)" | tee out/d.txt
 echo -e "\n\n"
